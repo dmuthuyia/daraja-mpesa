@@ -55,8 +55,8 @@ app.get("/register", access, async (req, resp) => {
       ShortCode: shortCode, // provide the short code obtained from your test credentials. 603020 for sandbox
       ResponseType: "Completed",
       ConfirmationURL:
-        "https://5f0e-41-72-216-66.ngrok-free.app/confirmation_url",
-      ValidationURL: "https://5f0e-41-72-216-66.ngrok-free.app/validation_url",
+        "https://c3ca-41-72-216-66.ngrok.io/confirmation_url",
+      ValidationURL: "https://c3ca-41-72-216-66.ngrok.io/validation_url",
     };
 
     const response = await axios.post(url, requestData, axiosConfig);
@@ -128,10 +128,10 @@ app.get("/stk", access, (req, res) => {
         Timestamp: timestamp,
         TransactionType: "CustomerPayBillOnline",
         Amount: "1",
-        PartyA: "254794163500",
+        PartyA: "254796131291",
         PartyB: shortCode,
-        PhoneNumber: "254794163500",
-        CallBackURL: "https://5f0e-41-72-216-66.ngrok-free.app/stk_callback",
+        PhoneNumber: "254796131291",
+        CallBackURL: "https://c3ca-41-72-216-66.ngrok.io/stk_callback",
         AccountReference: "Test",
         TransactionDesc: "TestPay",
       },
@@ -167,8 +167,8 @@ app.get("/balance", access, async (req, resp) => {
       PartyA: shortCode,
       IdentifierType: "4",
       Remarks: "bal",
-      QueueTimeOutURL: "https://5f0e-41-72-216-66.ngrok-free.app/bal_timeout",
-      ResultURL: "https://5f0e-41-72-216-66.ngrok-free.app/bal_result",
+      QueueTimeOutURL: "https://c3ca-41-72-216-66.ngrok.io /bal_timeout",
+      ResultURL: "https://c3ca-41-72-216-66.ngrok.io /bal_result",
     };
 
     const axiosConfig = {
@@ -205,8 +205,8 @@ app.get("/b2c", access, async (req, res) => {
       PartyB: "254708374149",
       Remarks: "please pay",
       QueueTimeOutURL:
-        "https://5f0e-41-72-216-66.ngrok-free.app/b2c_timeout_url",
-      ResultURL: "https://5f0e-41-72-216-66.ngrok-free.app/b2c_result_url",
+        "https://c3ca-41-72-216-66.ngrok.io /b2c_timeout_url",
+      ResultURL: "https://c3ca-41-72-216-66.ngrok.io /b2c_result_url",
       Occasion: "endmonth",
     };
 
